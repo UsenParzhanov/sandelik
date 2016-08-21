@@ -1,0 +1,394 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.07.2016, 23:44:36
+    Author     : Usen
+*/
+@font-face {
+    font-family: "BitterRegular";
+    src: url("fonts/BitterRegular/BitterRegular.eot");
+    src: url("fonts/BitterRegular/BitterRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BitterRegular/BitterRegular.woff") format("woff"),
+    url("fonts/BitterRegular/BitterRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BitterBold"; */
+@font-face {
+    font-family: BitterBold;
+    src: url("fonts/BitterBold/BitterBold.eot");
+    src: url("fonts/BitterBold/BitterBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BitterBold/BitterBold.woff") format("woff"),
+    url("fonts/BitterBold/BitterBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BitterItalic"; */
+@font-face {
+    font-family: "BitterItalic";
+    src: url("fonts/BitterItalic/BitterItalic.eot");
+    src: url("fonts/BitterItalic/BitterItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BitterItalic/BitterItalic.woff") format("woff"),
+    url("fonts/BitterItalic/BitterItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BitterBoldItalic"; */
+@font-face {
+    font-family: "BitterBoldItalic";
+    src: url("fonts/BitterBoldItalic/BitterBoldItalic.eot");
+    src: url("fonts/BitterBoldItalic/BitterBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BitterBoldItalic/BitterBoldItalic.woff") format("woff"),
+    url("fonts/BitterBoldItalic/BitterBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background: url(../images/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "BitterBold";
+}
+#wrapper {
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+}
+#left {
+	width: 66.14583333333333%;
+}
+#right {
+	width: 33.85416666666667%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: url(../images/background-blur.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: -3px -0px 5px rgba(0, 0, 0, 0.54);
+}
+#right p {
+    margin: 20px;
+    font-size: 30px;
+}
+
+ul{
+	list-style: none;
+        margin-top: 10px;
+}
+
+ul a{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 22px;
+	padding-left: 74px;
+	color: #ed1c24;
+	text-decoration: none;
+	font-size: 35px;
+}
+ul a:hover {
+	background: #010f1a;
+}
+
+#inthecandelik {
+	width: 400px;
+	height: 238px;
+	margin: 10px auto 0;
+	background: url(../images/background-blur.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.54);
+	text-align: center;
+
+}
+#logo {
+	font-size: 48px;
+	position: absolute;
+	color: white;
+	background: #ed1c24;
+	padding: 3px 14px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-80px);
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.72);
+	
+}
+input {
+	width: 350px;
+	font-family: "BitterBold";
+        
+}
+input[type="text"] {
+	margin-top: 30px;
+	height: 40px;
+	background:  #010f1a;
+	border: none;
+	color: white;
+	font-size: 24px;
+	text-indent: 10px;
+}
+select{
+        font-family: "BitterBold";
+        margin-top: 30px;
+	height: 40px;
+	background:  #010f1a;
+	border: none;
+	color: white;
+	font-size: 24px;
+	text-indent: 10px;
+        margin-left: 50px;
+        width: 160px;
+}
+input[type="password"] {
+	margin-top: 30px;
+	height: 40px;
+	background:  #010f1a;
+	border: none;
+	color: white;
+	font-size: 24px;
+	text-indent: 10px;
+}
+input[type="submit"] {
+	margin-top: 30px;
+	height: 40px;
+	background:  #ed1c24;
+	border: none;
+	color: white;
+	font-size: 26px;
+	text-indent: 10px;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.72);
+        cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	
+	background: #0A2472;
+	border: none;
+	/*color: #ed1c24;*/
+	
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.72);
+}
+h2{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	text-align: center;
+	color:  #ed1c24;
+}
+img {
+	display: block;
+	margin: 0 auto;
+}
+.zapisi{
+   border: 3px solid #ed1c24;
+   margin: 50px;
+   padding: 20px;
+   background: url(../images/background-blur.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 50px;
+   box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.54);
+}
+.count{
+    position: relative;
+    top: 12px;
+    right: 10px;
+    float: right;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: auto;
+    color: #ed1c24;
+    height: auto;
+    background: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    box-shadow: inset 3px 0px 5px rgba(0, 0, 0, 0.54);
+    border-radius: 400px;
+    border: 3px solid #ed1c24;
+
+    
+}
+.clear{
+    clear: both;
+    display: block;
+}
+.onezapis{
+    width: 530px;
+    margin-bottom: 50px;
+    height: auto;
+    overflow: hidden;
+}
+.onezapis:last-of-type{
+    margin-bottom: 0px;
+}
+.headzapis {
+    width: 500px;
+    height: 30px;
+    background: #ed1c24;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.tag{
+    float: left;
+    color: aliceblue;
+}
+.date {
+    float: right;
+    color: aliceblue;
+}
+.bodyzapis{
+    min-height: 80px;
+    width: 500px;
+    background: #010f1a;
+    idth: 500px;
+    color: aliceblue;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#left input{
+    float: none;
+    margin: 50px 500px 0px 50px;
+}
+
+#left textarea{
+    width: 500px;
+    height: 300px;
+    background: #010f1a;
+    color: aliceblue;
+    font-family: "BitterBold";
+    font-size: 20px;
+    text-indent: 20px;
+    padding: 10px;
+    margin: 50px 500px 0px 50px;
+}
+
+.emptynotification{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    width: 650px;   
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.72);
+}
+
+.delete{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/_318-44323.png);
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    float: right;
+}
+.delete:hover{
+    transform: rotateX(360deg); 
+    webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+.active{
+    background: rgba(0,0,0,.3);
+    border-left: 50px;
+    border-left-color: white;
+    box-shadow: inset 3px 0px 30px rgba(0, 0, 0, 0.34);
+}
+.account{
+    width: 100%;
+    height: 300px;
+}
+
+.userPhoto{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px 0 5px 5px;
+    border-radius: 700px;
+    float: left;
+}
+.account ul{
+    float: right;
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 48%;
+    height: 300px
+}
+.proverka{
+    color: aliceblue;
+    margin-left: 50px;
+    background: url(../images/background-blur.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px;
+    font-size: 24px;
+    width: 280px;
+    border: 3px solid #ed1c24;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.72);
+}
+.proverk {
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 50px;
+    background: url(../images/background-blur.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px;
+    font-size: 24px;
+    width: 410px;
+    border: 3px solid #ed1c24;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.72);
+}
+input[type="file"]{
+    background: url(../images/background-blur.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 22px;
+    width: 240px;
+    color: red;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+.podnyam{
+    border-left: 2px solid white;
+    padding: 5px;
+    margin-bottom: 40px;
+}
